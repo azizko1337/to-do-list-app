@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#wrapper{
+    width:100%;
+    min-height:100vh;
+    background-color: #bbb;
+}
+
+div#wrapper>h1{
+    font-size: 40px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    padding-top:20vh;
+}
+
+div#wrapper>div.formulages{
+    width:25%;
+    margin:0 auto;
+}
+
+div#wrapper>div.formulages>form{
+    text-align:left;
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+    height:30px;
+}
+
+div#wrapper>div.formulages>form>input{
+    flex-basis:70%;
+    flex-grow:0;
+    width:50%;
+    font-size: 26px;
+}
+
+div#wrapper>div.formulages>form>button{
+    flex-basis:28%;
+    flex-grow:0;
+    border:none;
+}
+
+div#wrapper>div.formulages>input.searchTask{
+    height:30px;
+    width:70%;
+    margin-top:7px;
+}
+
+div#wrapper>div.taskList{
+    width:40%;
+    margin:0 auto;
+    background-color: #ddd;
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+
+div#wrapper>div.taskList>div{
+    margin-bottom:10px;
+    font-size: 22px;
+    border-top:2px solid black;
+    text-align: right;
+    word-wrap: break-word
+}
+
+div#wrapper>div.taskList button{
+    margin-left:15px;
+}
+
+@media(max-width:1024px){
+    div#wrapper>div.formulages{
+        width:60%;
+    }
+    div#wrapper>div.taskList{
+        width:55%;
+    }
+}
+
+@media(max-width:360px){
+    div#wrapper>div.formulages{
+        width:90%;
+    }
+    div#wrapper>div.taskList{
+        width:80%;
+    }
+}
